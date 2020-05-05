@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.hubick.util</groupId>
+    <artifactId>hubick-util-j-ws-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>hubick-util-j-ws-jax-rs</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Chris Hubick's Java Utilities - Web Services - JAX-RS</name>
+  <description>A library of Java JAX-RS/REST utility classes.</description>
+
+  <properties>
+    <activation-api.version>1.2.2</activation-api.version>
+    <rs-api.version>2.1.6</rs-api.version>
+    <bind-api.version>2.3.2</bind-api.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>jakarta.activation</groupId>
+      <artifactId>jakarta.activation-api</artifactId>
+      <version>${activation-api.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.ws.rs</groupId>
+      <artifactId>jakarta.ws.rs-api</artifactId>
+      <version>${rs-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency><!-- rs-api dep -->
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>${bind-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+</project>

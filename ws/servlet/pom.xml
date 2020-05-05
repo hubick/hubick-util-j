@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.hubick.util</groupId>
+    <artifactId>hubick-util-j-ws-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>hubick-util-j-ws-servlet</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Chris Hubick's Java Utilities - Web Services - Servlet</name>
+  <description>A library of Java Servlet utility classes.</description>
+
+  <properties>
+    <servlet-api.version>4.0.3</servlet-api.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>${servlet-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.hubick.util</groupId>
+      <artifactId>hubick-util-j-core</artifactId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+
+</project>
