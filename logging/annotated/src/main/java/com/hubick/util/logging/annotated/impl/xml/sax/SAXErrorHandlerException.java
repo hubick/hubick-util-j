@@ -26,6 +26,7 @@ import com.hubick.util.logging.annotated.impl.*;
  * {@linkplain #fatalError(SAXParseException) fatal errors} received, and then throws itself in case of a
  * non-recoverable error.
  */
+@SuppressWarnings("exports") // The `requires static java.xml` causes Eclipse warnings about missing `transitive`.
 @NonNullByDefault
 public class SAXErrorHandlerException extends SAXException implements ErrorHandler, AnnotatedLogMessage {
   /**
